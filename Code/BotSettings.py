@@ -4,7 +4,7 @@ settings = {
     "RTIME" : 1, #Must be a whole number between 0-3
     "DRIVER" : r"ChromeWebDriver\chromedriver.exe",
     "LINKS" : r"ProductLinks.txt",
-    "SKIPSIGNIN" : True, #set this to False if you want it to ask for sign in at the start.
+    "SKIPSIGNIN" : False, #set this to True if you want selenium to skip the Newegg sign-in process
 
 }
 
