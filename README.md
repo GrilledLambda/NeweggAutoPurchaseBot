@@ -4,7 +4,8 @@ This is a auto-purchase bot that uses selenium and HTTP requests to check for av
 # 
 Once you are done configuring the settings in BotSettings.py, open an elevated CMD and run the following command to automatically install dependencies:
 pip3 install -r requirements.txt
-After that you are good to go. Just run ScanPages.py
+After that you are good to go. 
+Just run ScanPages.py
 #
 
 Please report any bugs you find.
