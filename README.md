@@ -10,5 +10,5 @@ Just run ScanPages.py
 #
 Please report any bugs you find.  
 ```diff
--run at your own risk. I am unsure if this violates Newegg's terms.
-111
+-run at your own risk. I am unsure if this violates Newegg's terms
+```
