@@ -6,9 +6,10 @@ Once you are done configuring the settings in BotSettings.py, open an elevated C
 ```
  pip3 -r requirements.txt
 ```
-
 After that you are good to go. 
-Just run ScanPages.py
+Just run `ScanPages.py`
 #
 Please report any bugs you find.  
+
+**WARNING:** Run this at your own risk. I am unsure whether or not this violates Newegg's terms.
 
