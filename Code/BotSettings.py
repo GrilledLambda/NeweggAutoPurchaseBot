@@ -3,7 +3,7 @@ settings = {
     "CVV" : "",
     "RTIME" : 1, #Must be a whole number between 0-3
     "DRIVER" : r"ChromeWebDriver\chromedriver.exe",
-    "LINKS" : r"ProductLinks.txt",
+    "LINKS" : r"Resources/ProductLinks.txt",
     "SKIPSIGNIN" : False, #set this to True if you want selenium to skip the Newegg sign-in process
 
 }
