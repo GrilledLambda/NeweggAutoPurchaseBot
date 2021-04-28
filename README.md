@@ -8,5 +8,7 @@ Once you are done configuring the settings in BotSettings.py, open an elevated C
 After that you are good to go. 
 Just run ScanPages.py
 #
-
-Please report any bugs you find.
+Please report any bugs you find.  
+```diff
+-run at your own risk. I am unsure if this violates Newegg's terms.
+111
