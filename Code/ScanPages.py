@@ -37,16 +37,18 @@ class WebBot:
         
         headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0", "Accept-Encoding":"gzip, deflate", "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT":"1","Connection":"close", "Upgrade-Insecure-Requests":"1"}
         for link in productLinks:
-            response = requests.get(link, headers=headers, timeout=10)
-            root = lxml.html.fromstring(response.content)
-            button = root.xpath(xPaths["addToCart"])
-            if len(button) > 0:
-                print("Item Found. IN STOCK")
-                return link
-            else:
-                print("Not Available")
-            await asyncio.sleep(random.randint(settings["RTIME"], 3))
-        
+            try:
+                response = requests.get(link, headers=headers, timeout=10)
+                root = lxml.html.fromstring(response.content)
+                button = root.xpath(xPaths["addToCart"])
+                if len(button) > 0:
+                    print("Item Found. IN STOCK")
+                    return link
+                else:
+                    print("Not Available")
+                    await asyncio.sleep(random.randint(settings["RTIME"], 3))
+            except:
+                pass
         return False
 
     #adds the found item to cart and will dismiss additional offerings.
