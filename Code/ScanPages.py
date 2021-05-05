@@ -91,7 +91,7 @@ class WebBot:
         time.sleep(10)
 
 
-    #logs in and keeps session open by refreshing every 5 seconds.
+    #logs in and keeps session open by refreshing randomly between 1 - 200 seconds (asynchronously).
     def startSession(self):
 
         if settings["SKIPSIGNIN"]:
